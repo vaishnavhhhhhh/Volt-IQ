@@ -2,8 +2,8 @@ import streamlit as st
 import math
 from groq import Groq
 from fpdf import FPDF
-from config import API_KEY
-from openrouter_config import OPENROUTER_API_KEY
+API_KEY = st.secrets["GROQ_API_KEY"]
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 st.set_page_config(  
     page_title="Volt-IQ",
     layout="wide"
